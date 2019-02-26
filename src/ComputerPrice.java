@@ -12,7 +12,8 @@ public class ComputerPrice {
     double dysk_twardy = 400;
     double monitor = 500;
 
-    public ComputerPrice(double vatTax, double plyta_glowna, double procesor, double ram, double dysk_twardy, double monitor) {
+    public ComputerPrice(double vatTax, double plyta_glowna, double procesor,
+                         double ram, double dysk_twardy, double monitor) {
         this.vatTax = vatTax;
         this.plyta_glowna = plyta_glowna;
         this.procesor = procesor;
@@ -37,7 +38,8 @@ public class ComputerPrice {
     }
 
     public static void main(String[] args) {
-        ComputerPrice newComputer = new ComputerPrice(1.23, 583,729,399, 299, 800);
+        ComputerPrice newComputer = new ComputerPrice(1.23, 583,729,
+                                                    399,600, 1000);
         System.out.println("Computer price = " +  newComputer.getComputerPrice());
         System.out.println("Monitor price = " + newComputer.getMonitorPrice());
         System.out.println("Computer and MOnitor price = " + newComputer.getComputerAndMonitorPrice());
