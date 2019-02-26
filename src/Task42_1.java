@@ -1,4 +1,4 @@
-public class Task11 {
+public class Task42_1 {
 
     public static void checkNumber(int x) {
 
