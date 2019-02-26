@@ -1,11 +1,20 @@
+import java.util.Scanner;
+
 /**
  * Napisz program, który wypisze na ekran konsoli, słowo oznaczające ocenę dla podanej cyfry.
  * Np. dla 1 - "niedostateczny", 2 - "mierny" itp. Obsłuż przypadek gdy cyfra jest poza skalą ocen.
  */
+import java.util.Scanner;
 
 public class Task42_2 {
     public static void main(String[] args) {
-        int x = 7;
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Podaj ocenę od 1 do 6: ");
+        int x = scanner.nextInt();
+
+
+        //int x = 7;
 
         switch (x) {
             case 1:

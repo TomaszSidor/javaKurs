@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Task42_1 {
 
     public static void checkNumber(int x) {
@@ -19,13 +21,20 @@ public class Task42_1 {
     }
 
     public static void main(String[] args) {
-        int x = 15;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Podaj liczbę:");
+        int x = scanner.nextInt();
+        checkNumber(x);
 
-        checkNumber(10);
-        checkNumber(15);
-        checkNumber(59787);
-        checkNumber(84747696);
-        checkNumber(-1);
+
+
+//        int x = 15;
+//
+//        checkNumber(10);
+//        checkNumber(15);
+//        checkNumber(59787);
+//        checkNumber(84747696);
+//        checkNumber(-1);
 
 
     }

@@ -4,18 +4,24 @@
  * więc wystarczy znaleźć kod np. dla litery 'a' i 'z' i sprawdzić czy podany kod zawiera się w tym przedziale.
  */
 
+import java.util.Scanner;
+
+
 public class Task42_4 {
     public static void main(String[] args) {
-        char x = 72;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Podaj kod Unicode: ");
+        int x = scanner.nextInt();
+        //char x = 72;
 
         if (x >= (int)'A' && x <= (int)'Z'){
-            System.out.println("Znak " + x + " jest wielką literą.");
+            System.out.println("Znak " + (char)x + " jest wielką literą.");
         }
         else if (x >= (int)'a' && x <= (int)'z') {
-            System.out.println("Znak " + x + " jest małą literą.");
+            System.out.println("Znak " + (char)x + " jest małą literą.");
         }
         else if (x >= (int)'0' && x <= (int)'9') {
-            System.out.println("Znak " + x + " jest cyfrą.");
+            System.out.println("Znak " + (char)x + " jest cyfrą.");
         }
     }
 }

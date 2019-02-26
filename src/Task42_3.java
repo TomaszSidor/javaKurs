@@ -2,10 +2,16 @@
  * Napisz program, który wypisze na ekran konsoli, cyfrę arabską dla podanej liczby rzymskiej
  * (od 1 do 9). Czyli np. dla 'I' wypisze 1, dla 'V' 5 itp. Obsłuż przypadek gdy podana liczba rzymska jest nieprawidłowa.
  */
+import java.util.Scanner;
+
 
 public class Task42_3 {
     public static void main(String[] args) {
-         String x ="II";
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Podaj liczbę rzymską od I do IX: ");
+        String x = scanner.next();
+
+        //String x ="II";
 
         switch(x){
             case "I":
