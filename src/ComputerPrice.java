@@ -43,6 +43,7 @@ public class ComputerPrice {
         System.out.println("Computer price = " +  newComputer.getComputerPrice());
         System.out.println("Monitor price = " + newComputer.getMonitorPrice());
         System.out.println("Computer and Monitor price = " + newComputer.getComputerAndMonitorPrice());
+        System.out.println("Computer and Monitor price GIT= " + newComputer.getComputerAndMonitorPrice());
     }
 }
 
