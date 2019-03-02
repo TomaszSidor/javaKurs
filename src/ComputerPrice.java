@@ -22,11 +22,11 @@ public class ComputerPrice {
         this.monitor = monitor;
     }
     public double getMonitorPrice(){
-        return this.monitor * this.vatTax;
+        return monitor * vatTax;
     }
 
     public double getComputerPrice(){
-        return (this.mainBoard + this.procesor + this.ram + this.HDD) * this.vatTax;
+        return (mainBoard + procesor + ram + HDD) * vatTax;
     }
 
     public double getComputerAndMonitorPrice(){
@@ -43,7 +43,7 @@ public class ComputerPrice {
         System.out.println("Computer price = " +  newComputer.getComputerPrice());
         System.out.println("Monitor price = " + newComputer.getMonitorPrice());
         System.out.println("Computer and Monitor price = " + newComputer.getComputerAndMonitorPrice());
-        System.out.println("Computer and Monitor price GIT= " + newComputer.getComputerAndMonitorPrice());
+        System.out.println("Computer and Monitor price GIT i  w górę= " + newComputer.getComputerAndMonitorPrice());
     }
 }
 
