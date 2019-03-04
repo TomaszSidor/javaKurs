@@ -10,9 +10,6 @@ public class Loops {
         System.out.println();
     }
 
-
-
-
     public void powerN (int a, int n){
         int x = a;
         for (int i = 1; i < n; i++){
@@ -35,12 +32,18 @@ public class Loops {
         System.out.println();
     }
 
-    public void compareString(String a, String b){
-        int i = 0;
-        while (a.charAt(i) == b.charAt(i)) {
-            i++;
-            System.out.println("Taki sam");
+    public boolean compareString(String a, String b){
+        boolean result = false;
+
+        if (a.length() == b.length()){ //pierwszy najprostrzy warunek czy a i b ma taka sama dlugosc
+            for (int i = 0; i < a.length(); i++){
+                result = (a.charAt(i) == b.charAt(i)); // do póki znaki są takie same, pętla sie wykonuje, jak jest
+                                                         // false to break i result = false
+                if (result == false) break;
+            }
         }
+
+        return result;
 
     }
 
@@ -49,12 +52,6 @@ public class Loops {
         test.showN(10);
         test.powerN(2,8);
         test.alphabet();
-        test.compareString("abcde", "abcdf");
-
-        for (int j = 0; j < 5; j++) {
-            System.out.println("Krowa");
-
-        }
-
+        System.out.println("Czy a i b są takie same: " + test.compareString("abcde fghj", "abcde fghi"));
     }
 }
