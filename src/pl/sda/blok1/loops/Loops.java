@@ -44,7 +44,28 @@ public class Loops {
         }
 
         return result;
+    }
 
+    public int howManyPhrase (String phrase, String text){
+        int result = 0;
+
+        for (int i = 0; i < text.length(); i++){
+            if (text.indexOf(phrase) >= 0){
+                text = text.substring(text.indexOf(phrase) + phrase.length());
+                result++;
+            }
+
+
+//            if (x >= 0){
+//                String b = a.substring(x + 3); // nowy string od indexu za pierwszym "nie"
+//                int y = b.indexOf("nie");
+//                if (y >= 0){
+//                    String c = b.substring(y + 3); // nowy string od indexu drugiego "nie"
+//                    result = c.contains("nie"); // jesli tu jest "nie", to warunek spelniony i koniec
+
+        }
+
+        return result;
     }
 
     public static void main(String[] args) {
@@ -53,5 +74,9 @@ public class Loops {
         test.powerN(2,8);
         test.alphabet();
         System.out.println("Czy a i b są takie same: " + test.compareString("abcde fghj", "abcde fghi"));
+
+        String phrase = "nie";
+        String text = "nie bardzo wiem jak to mam nie powiedzieć, niezasłużyłem na taką niesprawiedliwość co nie? ";
+        System.out.println("NIE w tekscie występuje " + test.howManyPhrase(phrase, text) + " razy.");
     }
 }
