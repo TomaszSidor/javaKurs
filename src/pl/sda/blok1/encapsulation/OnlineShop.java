@@ -1,10 +1,10 @@
-package pl.sda.blok1.task;
+package pl.sda.blok1.encapsulation;
 
-import pl.sda.blok1.task.cart.Cart;
-import pl.sda.blok1.task.item.ItemManager;
-import pl.sda.blok1.task.item.ItemModel;
-import pl.sda.blok1.task.user.UserManager;
-import pl.sda.blok1.task.user.UserModel;
+import pl.sda.blok1.encapsulation.cart.Cart;
+import pl.sda.blok1.encapsulation.item.ItemManager;
+import pl.sda.blok1.encapsulation.item.ItemModel;
+import pl.sda.blok1.encapsulation.user.UserManager;
+import pl.sda.blok1.encapsulation.user.UserModel;
 
 import java.util.Scanner;
 
@@ -34,17 +34,23 @@ public class OnlineShop {
 //        System.out.println(michal);
 
         Cart zenekCart = new Cart();
-        System.out.println("Dodaj zakupy do koszyka. Wpisz co chcesz kupić z listy: computer, printer, monitor," +
-                " tv i po przecinku podaj ilość:");
-        Scanner in = new Scanner(System.in);
+//        System.out.println("Dodaj zakupy do koszyka. Wpisz co chcesz kupić z listy: computer, printer, monitor," +
+//                " tv i po przecinku podaj ilość:");
+//        Scanner in = new Scanner(System.in);
+//
+//        int i = 0;
+//
+//        String items[] = new String[45];
+//        items[i] = in.nextLine();
+//
+//        System.out.println(items[i]);
+//        i++;
+        ItemModel[] list = {computer, monitor, printer};
+        zenekCart.setShoppingList(list);
+        zenekCart.setTotalCost(list);
+        System.out.println("Lista " + zenekCart.toString());
+        System.out.println("Cena " + zenekCart.getTotalCost());
 
-        int i = 0;
-
-        String items[] = new String[45];
-        items[i] = in.nextLine();
-
-        System.out.println(items[i]);
-        i++;
 
 
 

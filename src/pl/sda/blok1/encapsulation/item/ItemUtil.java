@@ -1,4 +1,4 @@
-package pl.sda.blok1.task.item;
+package pl.sda.blok1.encapsulation.item;
 
 class ItemUtil {
     public String truncate(String text, int maxLength) {

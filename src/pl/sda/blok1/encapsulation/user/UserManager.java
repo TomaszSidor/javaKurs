@@ -1,4 +1,4 @@
-package pl.sda.blok1.task.user;
+package pl.sda.blok1.encapsulation.user;
 
 public class UserManager {
     private UserModel user;
