@@ -5,7 +5,7 @@ public class UserModel {
     private String lastName;
     private int age;
 
-    public UserModel(String firstName, String lastName, int age) {
+    protected UserModel(String firstName, String lastName, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;

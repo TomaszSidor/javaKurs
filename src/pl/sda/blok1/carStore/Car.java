@@ -1,7 +1,7 @@
 package pl.sda.blok1.carStore;
 
 public class Car {
-    private Entertainment fun;
+   // private Entertainment fun;
     private String brand;
     private String color;
 
