@@ -2,13 +2,13 @@ package pl.sda.blok1.arrays;
 
 
 import java.io.IOException;
-
+import pl.sda.blok1.carStore.Car;
 public class ArraysTest {
 
 
 
     public static void main(String[] args) throws IOException {
-            ArraysClass newTest = new ArraysClass();
+        ArraysClass newTest = new ArraysClass();
 
         String[] newArray1 = {"raz", "dwa", "trzy", "cztery"};
         int[] newIntArray = {1, 2, 3, 4, 5};
@@ -36,7 +36,14 @@ public class ArraysTest {
         }
         System.out.println();
 
-        newTest.showTwo(22.22, 32.56, 3, 325.25, 589, 2.25);
+        newTest.showTwo(2, 2, 2, 2, 2, 2);
+        Car[] cars = {new Car("toyota", "blue"), new Car("mazda", "silver"), new Car("opel", "czerwony")};
+
+
+
+
+        newTest.showArray(newTest.changePlaces(cars)); //czemu wyświetla adres a nie wyrazy z tablicy
+
 
 
 
