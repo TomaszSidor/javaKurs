@@ -2,6 +2,8 @@ package pl.sda.blok1.arrays;
 
 
 import java.io.IOException;
+import java.util.Arrays;
+
 import pl.sda.blok1.carStore.Car;
 public class ArraysTest {
 
@@ -40,9 +42,7 @@ public class ArraysTest {
         Car[] cars = {new Car("toyota", "blue"), new Car("mazda", "silver"), new Car("opel", "czerwony")};
 
 
-
-
-        newTest.showArray(newTest.changePlaces(cars)); //czemu wyświetla adres a nie wyrazy z tablicy
+        System.out.println(Arrays.toString(cars)); //czemu wyświetla adres a nie wyrazy z tablicy
 
 
 
