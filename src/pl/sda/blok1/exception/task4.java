@@ -3,7 +3,7 @@ package pl.sda.blok1.exception;
 import java.util.Scanner;
 
 public class task4 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MyException{
 
         Scanner scanner = new Scanner(System.in);
         while (true) {
@@ -19,7 +19,7 @@ public class task4 {
                     sum = sum + Integer.parseInt(inputArray[i]);
 
                 } catch (java.lang.NumberFormatException nfe) {
-                    System.out.println("Podałeś znaki nieliczby");
+                    System.out.println("Podałeś znaki niecyfry");
                 }
             }
 

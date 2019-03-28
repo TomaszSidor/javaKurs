@@ -1,5 +1,7 @@
 package pl.sda.blok1.interface1;
 
+
+
 public class Figures {
     public static void main(String[] args) {
         Rectangle rect = new Rectangle(5, 10);
@@ -12,5 +14,7 @@ public class Figures {
         Triangle triangle = new Triangle(3, 5);
         triangle.print();
         triangle.draw();
+
+
     }
 }

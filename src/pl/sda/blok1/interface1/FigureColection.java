@@ -60,6 +60,7 @@ public class FigureColection {
 //        prostokaty.add(new Rectangle(4,1));
 //        prostokaty.add(new Rectangle(5,1));
 
+        System.out.println("Equels : " + trojkaty.equals(kola));
 
 
 

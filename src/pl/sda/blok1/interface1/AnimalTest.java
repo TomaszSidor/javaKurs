@@ -15,5 +15,8 @@ public class AnimalTest {
         for (Animal animal : animals){
             System.out.println(animal.getName() + " " + animal.speak() + " age: " + animal.getAge() + " " + animal.isAlive() );
         }
+        Plant palm = new Palm();
+
+        System.out.println("Palm is alive: " + palm.isAlive());
     }
 }
